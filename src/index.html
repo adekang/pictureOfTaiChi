@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        #div1 {
+            position: fixed;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #demo {
+            word-break: break-all;
+        }
+
+        /* #div1 {
+            border-radius: 50%;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+            border: none;
+        } */
+
+        /* #div1 {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        } */
+
+
+
+        /*加一黑一白的小球*/
+        /* #div1::before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #div1::after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%);
+
+        } */
+
+        @media (max-width:500px) {
+            #div1Wallpaper {
+                height: 50vh;
+                text-align: center;
+            }
+
+            #div1 {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+
+            #demo {
+                height: 50vh;
+                overflow: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <style id="style"></style>
+    <div id="demo"></div>
+    <div id="div1Wallpaper">
+        <div id="div1"></div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
